@@ -5,7 +5,7 @@ import { useParams } from "react-router-dom";
 import { DewormingForm } from "./DewormingForm";
 import { VaccinationForm } from "./VaccinationForm";
 import { PetProfileInfo } from "./PetProfileInfo";
-import { ConsultsForm } from "../../components/ConsultsForm/ConsultsForm";
+import { ConsultsForm } from "./ConsultsForm";
 
 export const PetProfile = () => {
   const user = JSON.parse(localStorage.getItem('user'))

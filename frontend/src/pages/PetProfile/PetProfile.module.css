@@ -1,10 +1,11 @@
 .ProfileContainer {
   margin: 9rem auto;
   color: var(--color-blue);
+  max-width: 100%;
 }
 
 .profileInfo {
-  width: 90%;
+  width: 80%;
   margin: auto;
 }
 
@@ -30,9 +31,11 @@
   width: 100%;
   gap: .5rem;
 }
+
 .ChangeProfileImgBtn input,
 .ProfileContainer button {
   margin-left: auto;
+  margin-bottom: .5rem;
   align-self: flex-end;
   padding: 0 2rem;
 
@@ -47,6 +50,7 @@
   font-weight: 600;
   color: var(--color-petroleo);
 }
+
 .ChangeProfileImgBtn input,
 .ProfileContainer button:hover {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
@@ -77,13 +81,15 @@
   border-radius: 20px;
   color: white;
   font-weight: lighter;
-  
+
 }
-.stickyNotesList{
+
+.stickyNotesList {
   display: grid;
   grid-template-columns: auto auto auto;
   gap: 1rem;
 }
+
 .stickyNotes h2 {
   text-align: center;
   font-weight: 500;
@@ -228,19 +234,38 @@ h2 {
   flex: 1;
 
 }
+
 .ChangeProfileImgBtn,
-.ImgContainer{
+.ImgContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: .5rem;
 }
-.ChangeProfileImgBtn input{
+
+.ChangeProfileImgBtn input {
   width: 100%;
 }
 
-.UpdatePassword input{
+.UpdatePassword input {
   background-color: red;
+}
+
+.consultsRecordsCards button {
+  margin-top: .5rem;
+
+}
+
+pre {
+  white-space: pre-wrap;
+  font-weight: 300;
+  border-bottom: 1px dotted white;
+  padding: .5rem 0;
+}
+
+pre span {
+  font-size: 1.2em;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 800px) {

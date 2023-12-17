@@ -74,10 +74,10 @@ export const ConsultsForm = ({ styles, consultations, handleUpdate, consultation
               {consult.control && (<h3><span>Control for: </span>{consult.control}</h3>)}
 
             </div>
-            {consult.sintoms && (<p><span>Sintoms: </span>{consult.sintoms}</p>)}
-            {consult.exams && (<p><span>Exams and results: </span>{consult.exams}</p>)}
-            <p><span>Veterinarian&rsquo;s assessment: </span>{consult.assessment}</p>
-            {consult.treatment && (<p><span>Prescribed treatment: </span>{consult.treatment}</p>)}
+            {consult.sintoms && (<pre><span>Sintoms: </span>{consult.sintoms}</pre>)}
+            {consult.exams && (<pre><span>Exams and results: </span>{consult.exams}</pre>)}
+            <pre><span>Veterinarian&rsquo;s assessment: </span>{consult.assessment}</pre>
+            {consult.treatment && (<pre><span>Prescribed treatment: </span>{consult.treatment}</pre>)}
 
             <button onClick={() => handleDeleteConsultation(consult.id)}>Delete</button>
           </div>
