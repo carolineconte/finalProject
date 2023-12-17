@@ -1,0 +1,39 @@
+.InputSelect {
+    background: var(--background-input);
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    text-align: center;
+    font-size: .8em;
+    padding: .5rem;
+    width: fit-content;
+    margin: 2rem 0;
+}
+
+.InputSelect select {
+    background-color: transparent;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: var(--color-blue);
+    letter-spacing: 2px;
+    outline: none;
+    cursor: pointer;
+    font-size: 1.3em;
+    margin-left: .5rem;
+    
+}
+
+#selectLabel {
+    font-weight: 500;
+    color: var(--color-petroleo);
+    margin-right: .5rem;
+}
+
+@media screen and (min-width: 800px) {
+    .InputSelect {
+        padding: .5rem 1rem;
+        display: flex;
+        font-size: 1rem;
+    }
+}

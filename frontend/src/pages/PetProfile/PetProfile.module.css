@@ -1,0 +1,314 @@
+.ProfileContainer {
+  margin: 9rem auto;
+  color: var(--color-blue);
+}
+
+.profileInfo {
+  width: 90%;
+  margin: auto;
+}
+
+.ProfileContainer img {
+  width: 300px;
+  object-fit: cover;
+  margin: 1rem auto;
+  display: block;
+}
+
+.ProfileContainer h1 {
+  font-size: 3em;
+  -webkit-text-stroke: 1px rgb(255, 255, 255);
+  font-weight: 800;
+  color: #01616B;
+  border-bottom: 2px solid var(--color-petroleo);
+}
+
+.pWithEdit {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  gap: .5rem;
+}
+.ChangeProfileImgBtn input,
+.ProfileContainer button {
+  margin-left: auto;
+  align-self: flex-end;
+  padding: 0 2rem;
+
+  background-color: var(--color-yellow);
+
+  border: none;
+  border-radius: 12px;
+
+  cursor: pointer;
+  border: 3px solid var(--color-yellow);
+  transition: border 0.1s, box-shadow 0.1s;
+  font-weight: 600;
+  color: var(--color-petroleo);
+}
+.ChangeProfileImgBtn input,
+.ProfileContainer button:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 3px solid #FAE4DE;
+}
+
+.profile span {
+  font-size: 1.2em;
+}
+
+.profile p {
+  margin-bottom: .5rem;
+  padding: .5rem;
+  border: 1px dashed #01616B;
+}
+
+.profile {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--color-blue);
+  margin-bottom: .5rem;
+}
+
+.stickyNotes {
+  margin: 1rem;
+  background-color: var(--color-coral);
+  padding: 2rem;
+  border-radius: 20px;
+  color: white;
+  font-weight: lighter;
+  
+}
+.stickyNotesList{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+}
+.stickyNotes h2 {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.stickyNotesNextDate {
+  font-size: 1.2rem;
+  border-bottom: 1px solid white;
+  display: flex;
+}
+
+.sectionControlsConsults,
+.sectionControls {
+  border: 2px solid var(--color-petroleo);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.ProfileContainer form {
+  padding: 1rem;
+  background-color: #01616B;
+  margin: 1rem auto;
+}
+
+.ProfileContainer form input {
+  border: none;
+  padding: .5rem 1rem;
+  width: 100%;
+  margin-bottom: .5rem;
+}
+
+.sectionControlsConsults form input[type=submit],
+.sectionControls form input[type=submit] {
+  background-color: var(--color-yellow);
+  font-weight: 500;
+  color: white;
+}
+
+.sectionControls form input:disabled {
+  background-color: gray;
+}
+
+.sectionControls section {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.controlRecords {
+  background-color: #01606b1a;
+  padding: .8rem;
+  border-radius: 12px;
+  width: 32%;
+}
+
+.controlRecords p {
+  word-break: break-all;
+}
+
+.controlRecords span {
+  font-weight: 500;
+  text-align: left;
+  margin-right: .2rem;
+}
+
+.controlRecordsConsults form {
+  padding: 1rem;
+}
+
+.sectionControlsConsults textarea {
+  margin-bottom: .5rem;
+  width: 100%;
+  resize: none;
+  padding: 1rem;
+  border: none;
+}
+
+.ProfileContainer label {
+  color: white;
+  margin: 0;
+}
+
+.consultsRecordsCards h3 {
+  font-weight: 500;
+  text-align: center;
+  margin: .5rem 0;
+  font-size: 1.3em;
+}
+
+.consultsRecordsCards {
+  color: white;
+  padding: 1rem;
+  margin-bottom: .5rem;
+  background-color: #748891f9;
+}
+
+.consultsRecordsCards p:first-child {
+  color: var(--color-yellow);
+  font-weight: 500;
+}
+
+.consultsRecordsCards p {
+  font-size: 1.1rem;
+  margin: .5rem 0;
+  padding-bottom: .5rem;
+  border-bottom: 1px dotted var(--color-blue);
+  letter-spacing: 1.5px;
+}
+
+.consultsRecordsCards p span {
+  font-weight: 100;
+}
+
+.ListFilter {
+  display: flex;
+  width: 100%;
+  background-color: var(--color-yellow);
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.ListFilter select,
+.ListFilter input {
+  border: none;
+  padding: .5rem;
+
+}
+
+.ListFilter select {
+  width: 20%;
+}
+
+.ListFilter input {
+  flex: 1;
+
+}
+.ChangeProfileImgBtn,
+.ImgContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+}
+.ChangeProfileImgBtn input{
+  width: 100%;
+}
+
+.UpdatePassword input{
+  background-color: red;
+}
+
+@media screen and (min-width: 800px) {
+  .ProfileContainer {
+    width: 90%;
+    margin: 6rem auto;
+    padding: 1rem 3rem;
+  }
+
+  .profile {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .profileInfo {
+    display: grid;
+    grid-template-columns: 350px 350px;
+    gap: 1rem 2rem;
+  }
+
+  .stickyNotesSections {
+    display: flex;
+    gap: 5rem;
+  }
+
+  .sectionControls form {
+    display: flex;
+    gap: .5rem;
+  }
+
+  .sectionControls form input:first-child {
+    flex: 2;
+  }
+
+  .ProfileContainer label {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+  }
+
+  .ProfileContainer label input {
+    flex: 1;
+  }
+
+  .consultControl {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px dotted white;
+  }
+
+  .consultControl p:first-child {
+    border-bottom: none;
+    margin: 0;
+  }
+
+  .inputsConsult {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .consultControl h3 {
+    flex: 1;
+    margin: 0;
+    padding-bottom: .5rem;
+  }
+
+  .ProfileContainer form input {
+    flex: 1;
+  }
+}

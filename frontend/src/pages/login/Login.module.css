@@ -1,0 +1,29 @@
+.loginContainer .btnForm {
+  display: block;
+  margin: 1rem auto;
+}
+@media screen and (min-width: 800px) {
+
+    .loginContainer form {
+        width: 60%;
+        padding: 2rem 3rem;
+    }
+
+    .loginContainer .btnForm  {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+    .loginContainer form {
+        width: 40%;
+        padding: 2rem 3rem;
+    }
+
+    .loginContainer .btnForm {
+        font-size: 1.2em;
+        width: 40%;
+    }
+
+}

@@ -1,0 +1,35 @@
+.professionalCard {
+  display: flex;
+  gap: 2rem;
+  margin: 2rem;
+  background-color: var(--color-blue);
+  padding: 2rem;
+  color: white;
+  box-shadow: var(--boxShadow);
+  transition: transform 0.3s ease-in-out;
+  position: relative;
+}
+
+.professionalCard:hover {
+  transform: scale(1.2);
+}
+
+.professionalCard:hover .hiddenText {
+  display: inline-block;
+}
+
+.professionalCard img {
+  width: 100px;
+  height: 100px;
+}
+
+.hiddenText {
+  display: none;
+  position: absolute;
+  top: 75%;
+  left: 70%;
+  background-color: var(--color-yellow);
+  padding: .1rem 1rem;
+  border-radius: 10px;
+  /* transform: translate(110%, 100%); */
+}

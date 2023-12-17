@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,900;1,400;1,600;1,900&display=swap');
+
+:root {
+    --color-coral: #E66F51;
+    --color-dark-green: #386641;
+    --color-light-green: #98BC6D;
+    --color-blue: #274653;
+    --color-petroleo: #01616B;
+    --color-yellow: #E9C46B;
+
+    --background-input:  rgba(255, 255, 255, 0.81);
+    
+    --boxShadow : -4px 4px 12.1px 0px #A6A49B;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body,
+html {
+    background-color: #F5F1DE;
+}
+
+.contorno {
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    font-weight: 800;
+    color: #01616B;
+}
+
+h1 {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 2em;
+    letter-spacing: 2px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem;
+    border-radius: 40px;
+    box-shadow: -4px 4px 12.1px 0px #A6A49B;
+    width: 95%;
+    background-color: var(--color-coral);
+}
+
+.formContainer label {
+    font-size: 1.5em;
+}
+
+.container {
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container a {
+    color: white;
+    align-self: center;
+    margin: 1em;
+    text-align: center;
+    padding: 0 2em;
+}
+
+.container span {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    margin-left: .5em;
+    color: var(--color-blue);
+}
+
+/* 
+
+
+
+
+
+.schedule-box {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+.InputTime {
+    background: rgba(255, 255, 255, 0.81);
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+    margin-bottom: 1em;
+}
+
+.docScan button {
+    width: 100%;
+}
+
+.passwordChangesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.passwordTypeButton,
+.passwordInput {
+    background: rgba(255, 255, 255, 0.81);
+    border: none;
+    outline: none;
+    color: black;
+    margin-bottom: .8rem;
+    font-size: 1.3em;
+}
+
+.passwordInput {
+    border-radius: 10px 0 0 10px;
+    padding: .4rem;
+    flex-grow: 1;
+}
+
+.passwordTypeButton {
+    border-radius: 0 10px 10px 0;
+    padding: .3rem 2rem;
+}
+
+
+
+@media screen and (min-width: 800px) {
+
+    .input-box-profile {
+        display: flex;
+        gap: 3em;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+
+    .formProfileContainer form {
+        padding: 3rem;
+        color: white;
+    }
+
+    .buttons * {
+        width: 500px;
+    }
+
+    .input-box {
+        display: flex;
+        gap: .5em;
+        width: 100%;
+    }
+
+    .flex {
+        flex-grow: 1;
+    } 
+}
+*/

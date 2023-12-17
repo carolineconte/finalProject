@@ -1,0 +1,192 @@
+.profileContainer {
+  margin: 6rem auto;
+  width: 95%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.accountContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.profile-title {
+  font-size: 3em;
+  margin: 2rem 0;
+}
+
+.account-content {
+  flex: 1;
+
+}
+
+.account-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid var(--color-dark-green);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.account-info p {
+  background-color: rgba(255, 255, 255, 0.81);
+  border-radius: 10px;
+
+}
+
+.account-info span {
+  text-align: left;
+  padding: 0 3rem;
+}
+
+.account-info .red {
+  align-self: center;
+  width: 50%;
+}
+
+.update-password {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.update-password input {
+  background: rgba(255, 255, 255, 0.81);
+  border: none;
+  outline: none;
+  color: black;
+  padding: .5rem 3rem;
+  border-radius: 10px;
+  margin-bottom: .5rem;
+}
+
+.account-content span {
+  font-weight: 500;
+  font-size: 1.3em;
+}
+
+.profile-img {
+  width: 250px;
+  height: 250px;
+  border-radius: 100%;
+  align-self: center;
+  border: 10px solid var(--color-dark-green);
+  margin: 1rem 3rem;
+  object-fit: cover;
+}
+
+
+
+.profileContainer h2 {
+  border-bottom: 2px dashed white;
+  font-size: 1.5em;
+  padding: .5rem;
+}
+
+.profileContent {
+  padding: 2rem 3rem;
+  font-size: 1.2em;
+  line-height: 35px;
+  letter-spacing: 2px;
+}
+
+
+.profile {
+  background-color: var(--color-dark-green);
+  border-radius: 20px;
+  color: white;
+}
+
+.profile-btns {
+  display: flex;
+  justify-content: right;
+  margin: 1rem;
+  gap: 1rem;
+}
+
+.btn-Profile {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 12px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: white;
+  font-size: 1em;
+  cursor: pointer;
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.ownerPets-container {
+  background-color: aqua;
+  padding: 1rem;
+}
+
+.ownerPets-btn {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: antiquewhite;
+  border: none;
+}
+
+.ownerPets-btn:hover {
+  box-shadow: 1px 1px 2px red;
+}
+
+.visit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visit img {
+  width: 350px;
+  height: 350px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.visit h1 {
+  font-size: 3rem;
+  margin: 0;
+  color: var(--color-coral);
+  line-height: 30px;
+}
+
+.visit h2 {
+  font-size: 2rem;
+  color: var(--color-coral);
+  padding: 0;
+  margin-bottom: 20px;
+  border-bottom: none;
+}
+
+
+
+@media screen and (min-width: 800px) {
+  .accountContainer {
+    flex-direction: row;
+  }
+
+  .update-password {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+}

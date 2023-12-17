@@ -1,0 +1,85 @@
+.form {
+  background-color: var(--color-blue);
+  padding: 3rem;
+  width: 90%;
+  margin: 10rem auto;
+  border-radius: 40px;
+  box-shadow: -4px 4px 12.1px 0px #A6A49B;
+  font-size: 1.2em;
+}
+
+.profileImg {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+.inputImg {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.submitBtn,
+.fileBtn {
+  margin-top: 1rem;
+  border: none;
+  padding: .5rem 2rem;
+  border-radius: 10px;
+  background-color: var( --color-yellow);
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border: 3px solid var(--color-yellow);
+  transition: border 0.1s, box-shadow 0.1s;
+}
+
+.submitBtn:hover,
+.fileBtn:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 3px solid #FAE4DE;
+}
+
+.submitBtn{
+  width: 90%;
+  display: block;
+  margin: 2rem auto 0;
+}
+.selectGender{
+  background: rgba(255, 255, 255, 0.81);
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  border-radius: 12px;
+  outline: none;
+  color: black;
+  margin-bottom: .8rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+
+  .selectGender {
+      padding: .8rem;
+      border-radius: 12px;
+      outline: none;
+      color: black;
+      margin-bottom: .8rem;
+      font-size: 1rem;
+      margin-top: 1.8rem;
+  }
+
+  .profilePet{
+    display: grid;
+    grid-template-columns: 45%  auto;
+    gap: 2rem;
+  }
+
+  .submitBtn{
+    width: 40%;
+  }
+}

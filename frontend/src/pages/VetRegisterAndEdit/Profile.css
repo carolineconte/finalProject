@@ -1,0 +1,109 @@
+.formProfileContainer {
+    min-height: 100vh;
+    padding: 6rem 0;
+    color: white;
+    margin-top: 3rem;
+}
+
+.formProfileContainer h2 {
+    margin-top: 1rem;
+}
+
+.formProfileContainer form {
+    background-color: var(--color-blue);
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 15px;
+    padding: 1rem;
+}
+
+.formProfileContainer form img {
+ width: 200px;
+ height: 200px;
+ border-radius: 100%;
+ margin: 1rem auto;
+ display: block;
+ object-fit: cover;
+}
+
+.formProfileContainer input {
+    background: rgba(255, 255, 255, 0.81);
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+}
+
+.formProfileContainer textarea {
+    background: rgba(255, 255, 255, 0.81);
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+}
+
+.btnProfile {
+    background-color: var(--color-yellow);
+    padding: .3rem 2rem;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    cursor: pointer;
+    border: 3px solid var(--color-yellow);
+    transition: border 0.1s, box-shadow 0.1s;
+    font-weight: 600;
+    color: var(--color-petroleo);
+    margin: 1rem auto;
+    display: block;
+    font-size: 1.3rem;
+}
+
+
+@media screen and (min-width: 800px) {
+    .formProfileContainer form {
+        padding: 2rem 3rem;
+    }
+
+    .formProfileContainer input {
+        padding: .5rem;
+        border-radius: 9px;
+        outline: none;
+        color: black;
+        font-size: 1rem;
+    }
+
+    .containerInputs {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .btnProfile {
+        padding: .5rem 1rem;
+        font-size: 1rem;
+
+    }
+
+    .scheduleDays {
+        display: flex;
+    }
+
+    .schedule {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: .5rem;
+    }
+
+
+    .schedule-box input[type=time] {
+        margin-right: 3rem;
+    }
+}

@@ -1,0 +1,22 @@
+.InputText input {
+    background: rgba(255, 255, 255, 0.81);
+    width: 100%;
+    border: none;
+    padding: 1rem;
+    border-radius: 12px;
+    outline: none;
+    color: black;
+    margin-bottom: .8rem;
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+    .InputText input {
+        padding: .8rem;
+        border-radius: 12px;
+        outline: none;
+        color: black;
+        margin-bottom: .8rem;
+        font-size: 1rem;
+    }
+}

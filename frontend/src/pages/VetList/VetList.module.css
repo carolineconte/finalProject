@@ -1,0 +1,27 @@
+.ListContainer{
+  width: 80%;
+  margin: 10rem auto;
+}
+
+.ListFilter{
+  display: flex;
+  width: 100%;
+  box-shadow: var(--boxShadow);
+}
+
+.ListFilter input[type='text']{
+  flex: 1;
+}
+
+.ListFilter * {
+border: none;
+padding: .5rem;
+outline: none;
+}
+
+@media screen and (min-width: 800px) {
+  .ListContainer{
+    width: 80%;
+    margin: 8rem auto;
+  }
+}

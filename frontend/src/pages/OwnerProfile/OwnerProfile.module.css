@@ -1,0 +1,180 @@
+.ownerProfileContainer {
+  width: 90%;
+  margin: 10rem auto;
+}
+
+.stickyNotes {
+  margin: 2rem 0;
+  background-color: var(--color-coral);
+  padding: 1rem;
+  border-radius: 12px;
+  color: white;
+  font-weight: light;
+}
+
+.stickyNotes h2 {
+  text-align: center;
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.stickyNotes form {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  align-items: center;
+  margin: 0 auto;
+  box-shadow: 0 0 5px rgba(216, 53, 13, 0.81);
+}
+
+.stickyNotes form input {
+  padding: 1rem;
+  border: none;
+  background-color: var(--background-input);
+  flex: 1;
+}
+
+.stickyNotes button {
+  border: none;
+  background-color: var(--color-yellow);
+  cursor: pointer;
+
+}
+
+.stickyNotes form button {
+  padding: 1rem;
+}
+
+.stickyNotes button:hover {
+  background-color: #c79f42;
+}
+
+.stickyNotesListContainer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  margin: 2rem auto;
+  width: 90%;
+  text-align: center;
+  gap: 1rem;
+}
+
+.stickyNotesList {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 1px dotted white;
+  justify-content: space-between;
+  padding: .2rem .5rem;
+  align-items: center;
+}
+
+.stickyNotesList button {
+  color: white;
+  padding: .1rem;
+  box-shadow: 0 0 5px rgba(216, 54, 13, 0.858);
+  border-radius: 12px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+.ownerFavoritesContainer,
+.ownerPetsContainer {
+  background-color: var(--color-dark-green);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+  margin: 1rem auto;
+  border-radius: 12px;
+}
+
+.petProfileLink {
+  background-color: rgba(255, 255, 255, 0.278);
+  padding: 1rem 1rem .5rem;
+  border-radius: 12px;
+}
+
+.petProfileLink:hover {
+  box-shadow: 1px 1px 2px 5px rgba(255, 255, 255, 0.613);
+}
+
+.ownerFavoritesContainer img,
+.ownerPetsContainer img {
+  width: 150px;
+  height: 150px;
+  display: block;
+  object-fit: cover;
+}
+
+
+.ownerPetsContainer :not(:last-child) img {
+  border-radius: 50%;
+  border: 5px solid var(--color-yellow);
+}
+
+.ownerFavoritesContainer p,
+.ownerPetsContainer p {
+  font-size: 2.5rem;
+  text-align: center;
+  max-width: 150px;
+  line-height: 10px;
+}
+
+#add {
+  font-size: 2em;
+}
+
+.containerMargin h2 {
+  color: var(--color-petroleo);
+  text-transform: capitalize;
+  font-size: 2em;
+  text-shadow: -2px 2px 1px rgba(121, 121, 121, 0.475);
+}
+
+.removeFavorite {
+  background: transparent;
+  border: none;
+  margin-top: 1.5rem;
+}
+
+.removeFavorite:hover {
+  cursor: pointer;
+  color: red;
+  background-color: white;
+}
+
+.ChangeProfileImgBtn {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.ChangeProfileImgBtn button,
+.ChangeProfileImgBtn input {
+  background-color: var(--color-yellow);
+  padding: .3rem 2rem;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  border: 3px solid var(--color-yellow);
+  transition: border 0.1s, box-shadow 0.1s;
+  font-weight: 600;
+  color: var(--color-petroleo);
+  display: block;
+}
+
+.ChangeProfileImgBtn button:hover,
+.ChangeProfileImgBtn input:hover {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 3px solid #FAE4DE;
+}
+
+.ImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

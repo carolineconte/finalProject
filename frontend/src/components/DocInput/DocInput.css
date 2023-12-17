@@ -1,0 +1,14 @@
+.inputDoc {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.inputDoc img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
